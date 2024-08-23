@@ -1,4 +1,4 @@
-*, *::before, ::after {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,8 +14,7 @@ body {
   flex-direction: column;
   font-family: "DM Sans", sans-serif;
 }
-
-.container {
+body .container {
   background: url(/assets/images/emile-perron-xrVDYZRGdw4-unsplash.jpg) center/cover no-repeat;
   background-blend-mode: multiply;
   display: flex;
@@ -30,15 +29,13 @@ body {
   margin: 30px auto;
   position: relative;
 }
-
-section {
+body section {
   width: 100%;
   max-width: 1200px;
   min-height: 100vh;
   margin: auto;
 }
-
-.nav-home {
+body .nav-home {
   position: absolute;
   top: 15px;
   width: 100%;
@@ -46,36 +43,54 @@ section {
   margin: 0 auto;
   padding: 0 80px;
 }
-
-.nav-home nav {
+body .nav-home nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-
-.nav-home nav ul {
+body .nav-home nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
 }
-
-.nav-home nav ul li {
+body .nav-home nav ul li {
   list-style-type: none;
   margin-left: 20px;
 }
-
-.nav-home nav ul li:first-child {
+body .nav-home nav ul li:first-child {
   margin-left: 0;
 }
-
-.logo {
+body .nav-home nav ul li a {
+  color: rgb(238, 238, 238);
+  text-transform: capitalize;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+body .nav-home nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(236, 217, 129);
+  transition: width 0.3s ease;
+}
+body .nav-home nav ul li a:hover::after {
+  width: 100%;
+}
+body .nav-home nav ul li a:hover {
+  color: rgb(236, 217, 129);
+}
+body .logo {
   margin-right: auto;
 }
-
-.logo a {
+body .logo a {
   color: rgb(238, 238, 238);
   text-transform: capitalize;
   text-decoration: none;
@@ -83,8 +98,7 @@ section {
   padding-bottom: 5px;
   transition: color 0.3s ease;
 }
-
-.logo a::after {
+body .logo a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -94,107 +108,63 @@ section {
   background-color: rgb(236, 217, 129);
   transition: width 0.3s ease;
 }
-
-.logo a:hover::after {
+body .logo a:hover::after {
   width: 100%;
 }
-
-.logo a:hover {
+body .logo a:hover {
   color: rgb(236, 217, 129);
 }
-
-.nav-home nav ul li a {
-  color: rgb(238, 238, 238);
-  text-transform: capitalize;
-  text-decoration: none;
-  position: relative;
-  padding-bottom: 5px;
-  transition: color 0.3s ease;
-}
-
-.nav-home nav ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: rgb(236, 217, 129);
-  transition: width 0.3s ease;
-}
-
-.nav-home nav ul li a:hover::after {
-  width: 100%;
-}
-
-.nav-home nav ul li a:hover {
-  color: rgb(236, 217, 129);
-}
-
-.background-tint {
+body .background-tint {
   background-color: rgba(163, 105, 39, 0.904);
   background-blend-mode: multiply;
 }
-
-.hero-content {
+body .hero-content {
   position: relative;
   top: 110px;
 }
-
-.hero-content h1 {
+body .hero-content h1 {
   color: rgb(240, 240, 240);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
-
-.hero-content .first-name {
+body .hero-content .first-name {
   text-transform: uppercase;
   font-weight: 200;
 }
-
-.hero-content .last-name {
+body .hero-content .last-name {
   display: block;
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 900;
 }
-
-.hero-content p {
+body .hero-content p {
   text-transform: capitalize;
   font-size: 1.7rem;
   font-weight: 200;
   margin-bottom: 20px;
 }
-
-.learn-more-btn {
+body .learn-more-btn {
   padding: 0.5rem 1rem;
   background-color: rgba(241, 170, 88, 0.5);
   color: rgb(238, 238, 238);
   font-size: 1.2rem;
   text-transform: capitalize;
-  margin-right: 0 15px 0 0;
+  margin-right: 15px;
   border-radius: 5px;
   border: none;
   transition: background-color 0.3s;
 }
-
-.learn-more-btn:hover {
+body .learn-more-btn:hover {
   background-color: rgb(236, 217, 129);
   color: rgb(16, 29, 29);
 }
-
-.learn-more-btn {
-  margin-right: 15px;
-}
-
-.icons {
+body .icons {
   display: flex;
   flex-direction: column;
   position: relative;
   top: -60px;
   left: -380px;
 }
-
-.social-icon {
+body .icons .social-icon {
   display: inline-block;
   position: relative;
   width: 40px;
@@ -202,8 +172,7 @@ section {
   margin-bottom: 10px;
   overflow: visible;
 }
-
-.social-icon a {
+body .icons .social-icon a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,17 +184,14 @@ section {
   background-color: rgba(241, 157, 61, 0.884);
   transition: background-color 0.3s;
 }
-
-.social-icon a:hover {
+body .icons .social-icon a:hover {
   background-color: rgba(51, 51, 51, 0.8);
 }
-
-.social-icon a:hover .social-text {
+body .icons .social-icon a:hover .social-text {
   visibility: visible;
   opacity: 1;
 }
-
-.social-text {
+body .icons .social-icon .social-text {
   position: absolute;
   width: 120px;
   left: 50%;
@@ -238,8 +204,7 @@ section {
   opacity: 0;
   transition: opacity 0.3s, visibility 0.3s;
 }
-
-.icons ion-icon {
+body .icons .social-icon ion-icon {
   font-size: 1.8em;
   color: rgb(235, 244, 246);
 }/*# sourceMappingURL=styles.css.map */
