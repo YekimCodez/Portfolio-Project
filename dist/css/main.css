@@ -163,7 +163,7 @@ body .logo a:hover {
   color: hsl(49, 74%, 72%);
 }
 body .background-tint {
-  background-color: rgba(163, 105, 39, 0.904);
+  background-color: hsla(32, 87%, 59%, 0.884);
   background-blend-mode: multiply;
 }
 body .hero-content {
