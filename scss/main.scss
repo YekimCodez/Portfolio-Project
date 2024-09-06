@@ -2,14 +2,14 @@
 
 // Imported styles
 @import "./about";
-@import "./variables";
+@import "./colors";
 @import "./resets";
 @import "./typography";
 
 // Body
 body {
   background-color: $bg-color-gold;
-  color: $font-lite;
+  color: $text-color-primary;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +69,7 @@ body {
           }
 
           a {
-            color: $font-lite;
+            color: $text-color-primary;
             text-transform: capitalize;
             text-decoration: none;
             position: relative;
@@ -104,7 +104,7 @@ body {
     margin-right: auto;
 
     a {
-      color: $font-lite;
+      color: $text-color-primary;
       text-transform: capitalize;
       text-decoration: none;
       position: relative;
@@ -142,7 +142,7 @@ body {
     top: 110px;
 
     h1 {
-      color: $h1-color-lite;
+      color: $text-color-primary;
       text-shadow: 2px 2px 2px rgb(0, 0, 0);
     }
 
@@ -204,7 +204,7 @@ body {
         align-items: center;
         width: 100%;
         height: 100%;
-        color: $font-lite;
+        color: $text-color-primary;
         border-radius: 50%;
         text-decoration: none;
         background-color: $bg-color-gold;
@@ -226,7 +226,7 @@ body {
         left: 50%;
         top: 0;
         background: $bg-color-gold;
-        color: $font-lite;
+        color: $text-color-primary;
         text-align: center;
         border-radius: 0 5px 5px 0;
         visibility: hidden;
