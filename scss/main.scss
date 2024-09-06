@@ -4,6 +4,7 @@
 @import "./about";
 @import "./variables";
 @import "./resets";
+@import "./typography";
 
 // Body
 body {
@@ -160,7 +161,7 @@ body {
     p {
       text-transform: capitalize;
       font-size: 1.7rem;
-      font-weight: 200;
+      font-weight: $font-weight-regular;
       margin-bottom: 20px;
     }
   }
@@ -168,7 +169,7 @@ body {
   .learn-more-btn {
     padding: 0.5rem 1rem;
     background-color: $bg-btn-gold;
-    color: $font-lite;
+    color: $text-color-primary;
     font-size: 1.2rem;
     text-transform: capitalize;
     margin-right: 15px;

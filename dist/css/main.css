@@ -187,13 +187,13 @@ body .hero-content .last-name {
 body .hero-content p {
   text-transform: capitalize;
   font-size: 1.7rem;
-  font-weight: 200;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 body .learn-more-btn {
   padding: 0.5rem 1rem;
   background-color: hsla(32, 85%, 65%, 0.5);
-  color: hsl(0, 0%, 93%);
+  color: hsl(210, 5%, 93%);
   font-size: 1.2rem;
   text-transform: capitalize;
   margin-right: 15px;
