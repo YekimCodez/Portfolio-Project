@@ -1,13 +1,61 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: hsl(191, 38%, 94%);
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  color: hsl(128, 10%, 45%);
+  max-width: 800px;
+  text-align: center;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-style: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+  max-width: 65ch;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
 }
 
 body {
-  background-color: rgba(241, 157, 61, 0.884);
-  color: rgb(238, 238, 238);
+  background-color: hsla(32, 87%, 59%, 0.884);
+  color: hsl(0, 0%, 93%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +112,7 @@ body .nav-home nav ul li:first-child {
   margin-left: 0;
 }
 body .nav-home nav ul li a {
-  color: rgb(238, 238, 238);
+  color: hsl(0, 0%, 93%);
   text-transform: capitalize;
   text-decoration: none;
   position: relative;
@@ -78,20 +126,20 @@ body .nav-home nav ul li a::after {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: rgb(236, 217, 129);
+  background-color: hsl(49, 74%, 72%);
   transition: width 0.3s ease;
 }
 body .nav-home nav ul li a:hover::after {
   width: 100%;
 }
 body .nav-home nav ul li a:hover {
-  color: rgb(236, 217, 129);
+  color: hsl(49, 74%, 72%);
 }
 body .logo {
   margin-right: auto;
 }
 body .logo a {
-  color: rgb(238, 238, 238);
+  color: hsl(0, 0%, 93%);
   text-transform: capitalize;
   text-decoration: none;
   position: relative;
@@ -105,14 +153,14 @@ body .logo a::after {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: rgb(236, 217, 129);
+  background-color: hsl(49, 74%, 72%);
   transition: width 0.3s ease;
 }
 body .logo a:hover::after {
   width: 100%;
 }
 body .logo a:hover {
-  color: rgb(236, 217, 129);
+  color: hsl(49, 74%, 72%);
 }
 body .background-tint {
   background-color: rgba(163, 105, 39, 0.904);
@@ -123,7 +171,7 @@ body .hero-content {
   top: 110px;
 }
 body .hero-content h1 {
-  color: rgb(240, 240, 240);
+  color: hsl(0, 0%, 94%);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 body .hero-content .first-name {
@@ -144,8 +192,8 @@ body .hero-content p {
 }
 body .learn-more-btn {
   padding: 0.5rem 1rem;
-  background-color: rgba(241, 170, 88, 0.5);
-  color: rgb(238, 238, 238);
+  background-color: hsla(32, 85%, 65%, 0.5);
+  color: hsl(0, 0%, 93%);
   font-size: 1.2rem;
   text-transform: capitalize;
   margin-right: 15px;
@@ -154,8 +202,8 @@ body .learn-more-btn {
   transition: background-color 0.3s;
 }
 body .learn-more-btn:hover {
-  background-color: rgb(236, 217, 129);
-  color: rgb(16, 29, 29);
+  background-color: hsl(49, 74%, 72%);
+  color: hsl(180, 29%, 9%);
 }
 body .icons {
   display: flex;
@@ -178,14 +226,14 @@ body .icons .social-icon a {
   align-items: center;
   width: 100%;
   height: 100%;
-  color: rgb(238, 238, 238);
+  color: hsl(0, 0%, 93%);
   border-radius: 50%;
   text-decoration: none;
-  background-color: rgba(241, 157, 61, 0.884);
+  background-color: hsla(32, 87%, 59%, 0.884);
   transition: background-color 0.3s;
 }
 body .icons .social-icon a:hover {
-  background-color: rgba(51, 51, 51, 0.8);
+  background-color: hsla(0, 0%, 20%, 0.8);
 }
 body .icons .social-icon a:hover .social-text {
   visibility: visible;
@@ -196,8 +244,8 @@ body .icons .social-icon .social-text {
   width: 120px;
   left: 50%;
   top: 0;
-  background: rgba(241, 157, 61, 0.884);
-  color: rgb(238, 238, 238);
+  background: hsla(32, 87%, 59%, 0.884);
+  color: hsl(0, 0%, 93%);
   text-align: center;
   border-radius: 0 5px 5px 0;
   visibility: hidden;
@@ -206,5 +254,5 @@ body .icons .social-icon .social-text {
 }
 body .icons .social-icon ion-icon {
   font-size: 1.8em;
-  color: rgb(235, 244, 246);
-}/*# sourceMappingURL=styles.css.map */
+  color: hsl(191, 38%, 94%);
+}/*# sourceMappingURL=main.css.map */
