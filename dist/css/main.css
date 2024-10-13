@@ -1,18 +1,34 @@
-.about-container {
+.about-page {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 2rem;
-  background-color: hsl(191, 38%, 94%);
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
 }
 
-.profile-photo {
+.about-content {
+  max-width: 800px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-home {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+}
+
+.my-image {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 1rem;
+  margin: 0 auto;
 }
 
 .about-text {
