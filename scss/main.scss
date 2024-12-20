@@ -16,6 +16,7 @@ body {
   flex-direction: column;
   font-family: "DM Sans", sans-serif;
   
+  // Container styles
   .container {
     background: url(/assets/images/emile-perron-xrVDYZRGdw4-unsplash.jpg) center / cover no-repeat;
     background-blend-mode: multiply;
@@ -27,6 +28,7 @@ body {
     box-shadow: 0 20px 40px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.20);
     width: 80%;
     min-height: 90vh;
+    max-width: 100%;
     padding: 2rem;
     margin: 30px auto;
     position: relative;
@@ -39,6 +41,7 @@ body {
     margin: auto;
   }
 
+  // Navigation styles
   .nav-home {
     position: absolute;
     top: 15px;
@@ -100,6 +103,7 @@ body {
     }
   }
 
+  // Logo styles
   .logo {
     margin-right: auto;
 
@@ -132,6 +136,7 @@ body {
     }
   }
 
+  // Styles for the tint over the background image as well as the typography and buttons
   .background-tint {
     background-color: $bg-color-gold;
     background-blend-mode: multiply;
@@ -164,25 +169,27 @@ body {
       font-weight: $font-weight-regular;
       margin-bottom: 20px;
     }
-  }
 
-  .projects-btn {
-    padding: 0.5rem 1rem;
-    background-color: $bg-btn-gold;
-    color: $text-color-primary;
-    font-size: 1.2rem;
-    text-transform: capitalize;
-    margin-right: 15px;
-    border-radius: 5px;
-    border: none;
-    transition: background-color 0.3s;
-
-    &:hover {
-      background-color: $btn-color-hover;
-      color: $bg-color-dark;
+    .projects-btn {
+      padding: 0.5rem 1rem;
+      background-color: $bg-btn-gold;
+      color: $text-color-primary;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      margin-right: 15px;
+      border-radius: 5px;
+      border: none;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: $btn-color-hover;
+        color: $bg-color-dark;
+      }
     }
   }
 
+ 
+  // Social media icon styles
   .icons {
     display: flex;
     flex-direction: column;
